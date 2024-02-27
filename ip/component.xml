@@ -2,11 +2,12 @@
 <spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <spirit:vendor>ammrat13.github.io</spirit:vendor>
   <spirit:library>hdmi</spirit:library>
-  <spirit:name>hdmi_cnd_enc</spirit:name>
+  <spirit:name>hdmi_cmd_enc</spirit:name>
   <spirit:version>0.0</spirit:version>
   <spirit:busInterfaces>
     <spirit:busInterface>
       <spirit:name>commands</spirit:name>
+      <spirit:displayName>Command Input</spirit:displayName>
       <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis" spirit:version="1.0"/>
       <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis_rtl" spirit:version="1.0"/>
       <spirit:slave/>
@@ -70,8 +71,7 @@
     </spirit:busInterface>
     <spirit:busInterface>
       <spirit:name>hdmi</spirit:name>
-      <spirit:displayName>HDMI</spirit:displayName>
-      <spirit:description>HDMI data over TMDS</spirit:description>
+      <spirit:displayName>HDMI Output</spirit:displayName>
       <spirit:busType spirit:vendor="ammrat13.github.io" spirit:library="hdmi" spirit:name="hdmi" spirit:version="0.0"/>
       <spirit:abstractionType spirit:vendor="ammrat13.github.io" spirit:library="hdmi" spirit:name="hdmi_rtl" spirit:version="0.0"/>
       <spirit:master/>
@@ -125,7 +125,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>eb8f2400</spirit:value>
+            <spirit:value>c64d12a6</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -141,7 +141,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>eb8f2400</spirit:value>
+            <spirit:value>c64d12a6</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -155,7 +155,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>f92e9879</spirit:value>
+            <spirit:value>f0ae4cc8</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -324,7 +324,7 @@
       <spirit:file>
         <spirit:name>src/top.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_dedbc45f</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_9cb5091a</spirit:userFileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
@@ -349,18 +349,18 @@
     <spirit:fileSet>
       <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>xgui/hdmi_cnd_enc_v0_0.tcl</spirit:name>
+        <spirit:name>xgui/hdmi_cmd_enc_v0_0.tcl</spirit:name>
         <spirit:fileType>tclSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_f92e9879</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_f0ae4cc8</spirit:userFileType>
         <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
   </spirit:fileSets>
-  <spirit:description>Encodes HDMI commands onto a TMDS stream</spirit:description>
+  <spirit:description>Command encoder for the HDMI Peripheral</spirit:description>
   <spirit:parameters>
     <spirit:parameter>
       <spirit:name>Component_Name</spirit:name>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">hdmi_cnd_enc_v0_0</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">top_v1_0</spirit:value>
     </spirit:parameter>
   </spirit:parameters>
   <spirit:vendorExtensions>
@@ -373,13 +373,13 @@
       </xilinx:taxonomies>
       <xilinx:displayName>HDMI Command Encoder</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
-      <xilinx:coreRevision>2</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2024-02-24T09:29:52Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>4</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2024-02-27T08:54:31Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2023.2.2</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="4080c804"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="fc2636d3"/>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="68bc91c1"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="bcb20a39"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="16632089"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="e1efc7d9"/>
       <xilinx:targetDRCs>

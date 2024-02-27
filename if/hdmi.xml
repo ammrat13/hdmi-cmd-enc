@@ -8,4 +8,9 @@
   <spirit:isAddressable>false</spirit:isAddressable>
   <spirit:maxMasters>1</spirit:maxMasters>
   <spirit:maxSlaves>1</spirit:maxSlaves>
+  <spirit:vendorExtensions>
+    <xilinx:busDefinitionInfo>
+      <xilinx:displayName>HDMI Interface</xilinx:displayName>
+    </xilinx:busDefinitionInfo>
+  </spirit:vendorExtensions>
 </spirit:busDefinition>

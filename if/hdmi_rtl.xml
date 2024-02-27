@@ -79,4 +79,9 @@
       </spirit:wire>
     </spirit:port>
   </spirit:ports>
+  <spirit:vendorExtensions>
+    <xilinx:abstractionDefinitionInfo>
+      <xilinx:displayName>HDMI Interface</xilinx:displayName>
+    </xilinx:abstractionDefinitionInfo>
+  </spirit:vendorExtensions>
 </spirit:abstractionDefinition>
